@@ -1,1 +1,1 @@
-web: gunicorn app:vietnamlicenseplaterecognition
+web: gunicorn app:app
