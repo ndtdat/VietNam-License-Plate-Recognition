@@ -1,9 +1,6 @@
-from PIL import Image
 import numpy as np
 from flask import Flask, request
-import flask
 import json
-import io
 import hyper as hp
 
 import cv2
