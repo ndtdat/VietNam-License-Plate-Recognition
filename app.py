@@ -15,7 +15,7 @@ model = None
 app = Flask(__name__)
 
 # Khai báo các route 1 cho API
-@app.route("/", methods=["GET"])
+@app.route("/")
 # Khai báo hàm xử lý dữ liệu.
 def _hello_world():
 	return "Hello world"
