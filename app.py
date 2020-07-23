@@ -42,4 +42,4 @@ if __name__ == "__main__":
 	print("App run!")
 	# Load model
 	model = E2E()
-	app.run(debug=False, host=hp.IP, threaded=False)
+	app.run()
