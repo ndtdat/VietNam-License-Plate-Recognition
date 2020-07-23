@@ -21,7 +21,7 @@ def _hello_world():
 	return "Hello world"
 
 # Khai báo các route 2 cho API
-@app.route("/predict", methods=["POST"])
+@app.route("/predict", methods=["POST", "GET"])
 # Khai báo hàm xử lý dữ liệu.
 def _predict():
 	data = {"success": False}
