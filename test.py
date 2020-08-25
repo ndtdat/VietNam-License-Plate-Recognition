@@ -20,7 +20,7 @@ def get_arguments():
 args = get_arguments()
 
 # Đọc ảnh
-img = cv2.imread(args.image_path)
+img = cv2.imread("D:\\COMPUTER-VISION-PROJECT-WITH-CODE\\Dataset\\VNLP_test\\lp92.jpg")
 
 # Khởi động model
 model = E2E()
@@ -29,7 +29,7 @@ model = E2E()
 image, lpnumber = model.predict(img)
 
 # In ra console để quan sát kết quả
-print('Giá trị của biển số xe: ' + lpnumber)
+print('Giá trị của biển số xe: ' + str(lpnumber))
 
 # Hiển thị ảnh dự đoán
 cv2.imshow('Result', image)

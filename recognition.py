@@ -109,11 +109,12 @@ class E2E(object):
 
         # Resize ảnh thresh với chiều rộng = 400px
         thresh = imutils.resize(thresh, width=400)
+        # thresh = cv2.medianBlur(thresh, 5)
 
         # Xóa nhiễu bằng thuật toán opening (erode => dilate)
         kernel = np.ones((2, 2), np.uint8)
-        thresh = cv2.cv2.erode(thresh, kernel)
-        thresh = cv2.cv2.dilate(thresh, kernel)
+        thresh = cv2.erode(thresh, kernel)
+        thresh = cv2.dilate(thresh, kernel)
 
         # Thực hiện thuật toán connected components analysis
         labels = measure.label(thresh, connectivity=2, background=0)

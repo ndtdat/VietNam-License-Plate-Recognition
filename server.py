@@ -27,7 +27,7 @@ def _hello_world():
 # Khai báo các route 2 cho API
 @app.route("/predict", methods=["POST"])
 # Khai báo hàm xử lý dữ liệu.
-def _predict():
+def predict():
     data = {"success": False}
     file_name = request.form.get("filename")
     print(file_name)
