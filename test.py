@@ -1,39 +1,40 @@
 from recognition import E2E
-import cv2.cv2 as cv2
-from pathlib import Path
+import cv2 as cv2
 import argparse
-import time
+import utils
 
 
 def get_arguments():
+    """
+    Hàm xử lý tham số truyền bằng command line
+    :return:
+    Đối tượng dạng danh sách {tham số: giá trị}
+    """
     arg = argparse.ArgumentParser()
     arg.add_argument('-i', '--image_path', help='link to image', default='./images/1.jpg')
 
     return arg.parse_args()
 
 
+# Lấy tham số truyền vào command line
 args = get_arguments()
-img_path = Path(args.image_path)
 
-# read image
-img = cv2.imread(str(img_path))
+# Đọc ảnh
+img = cv2.imread(args.image_path)
 
-# start
-start = time.time()
-
-# load model
+# Khởi động model
 model = E2E()
 
-# recognize license plate
-image = model.predict(img)
+# Dự đoán, trả về ảnh dự đoán và giá trị dự đoán
+image, lpnumber = model.predict(img)
 
-# end
-end = time.time()
+# In ra console để quan sát kết quả
+print('Giá trị của biển số xe: ' + lpnumber)
 
-print('Model process on %.2f s' % (end - start))
-
-# show image
+# Hiển thị ảnh dự đoán
 cv2.imshow('Result', image)
+cv2.waitKey(0)
+
 if cv2.waitKey(0) & 0xFF == ord('q'):
     exit(0)
 cv2.destroyAllWindows()

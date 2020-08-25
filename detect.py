@@ -2,7 +2,7 @@ import data_utils as utils
 import cv2
 import numpy as np
 
-
+# Class phát hiện vùng chứa biển số sử dụng YOLOv3 Tiny
 class detectNumberPlate(object):
     def __init__(self, threshold=0.5):
         args = utils.get_arguments()
@@ -11,7 +11,7 @@ class detectNumberPlate(object):
         self.labels = utils.get_labels(args.classes_path)
         self.threshold = threshold
 
-        # Load model
+        # Tải mô hình YOLOv3 Tiny cho phát hiện vùng biển số
         self.model = cv2.dnn.readNet(model=self.weight_path, config=self.cfg_path)
 
     def detect(self, image):
@@ -23,18 +23,20 @@ class detectNumberPlate(object):
         blob = cv2.dnn.blobFromImage(image, scalefactor=scale, size=(416, 416), mean=(0, 0), swapRB=True, crop=False)
         height, width = image.shape[:2]
 
-        # take image to model
+        # Lấy ảnh đầu vào cho model
         self.model.setInput(blob)
 
-        # run forward
+        # Thực hiện tính toán forward
         outputs = self.model.forward(utils.get_output_layers(self.model))
 
+        # Xử lý các vùng có khả năng là biển số xe
         for output in outputs:
             for i in range(len(output)):
                 scores = output[i][5:]
                 class_id = np.argmax(scores)
                 confidence = float(scores[class_id])
 
+                # Chọn vùng có độ tin cậy rằng vùng đó khả năng lớn là biển số
                 if confidence > self.threshold:
                     # coordinate of bounding boxes
                     center_x = int(output[i][0] * width)
@@ -53,6 +55,7 @@ class detectNumberPlate(object):
         indices = cv2.dnn.NMSBoxes(boxes, confidences, score_threshold=self.threshold, nms_threshold=0.4)
 
         coordinates = []
+        # Lưu giá trị của các vùng chắc chắn là biển số
         for i in indices:
             index = i[0]
             x_min, y_min, width, height = boxes[index]

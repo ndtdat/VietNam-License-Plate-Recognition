@@ -4,6 +4,11 @@ import cv2
 
 
 def get_digits_data(path):
+    """
+    Hàm lấy dữ liệu chữ số huấn luyện
+    :param path:
+    :return:
+    """
     data = np.load(path, allow_pickle=True)
     total_nb_data = len(data)
     np.random.shuffle(data)
@@ -19,6 +24,11 @@ def get_digits_data(path):
 
 
 def get_alphas_data(path):
+    """
+    Hàm lấy dữ liệu chữ cái huấn luyện
+    :param path:
+    :return:
+    """
     data = np.load(path, allow_pickle=True)
     total_nb_data = len(data)
 
@@ -35,6 +45,10 @@ def get_alphas_data(path):
 
 
 def get_arguments():
+    """
+    Hàm lấy giá trị tham số cho mạng YOLOv3 Tiny
+    :return:
+    """
     args = argparse.ArgumentParser()
     args.add_argument('-w', '--weight_path', help='link to weight path', default="./weights/yolov3-tiny_15000.weights")
     args.add_argument('-i', '--image_path', help='link to image file')
@@ -52,6 +66,13 @@ def get_labels(path):
 
 
 def draw_labels_and_boxes(image, labels, boxes):
+    """
+    Hàm vẽ label và bounding box lên ảnh dự đoán
+    :param image:
+    :param labels:
+    :param boxes:
+    :return:
+    """
     x_min = round(boxes[0])
     y_min = round(boxes[1])
     x_max = round(boxes[0] + boxes[2])
@@ -71,6 +92,12 @@ def get_output_layers(model):
 
 
 def order_points(coordinates):
+    """
+    Hàm sắp xếp các điểm tọa độ theo thứ tự chuẩn
+    trên trái - trên phải - dưới trái - dưới phải
+    :param coordinates:
+    :return:
+    """
     rect = np.zeros((4, 2), dtype="float32")
     x_min, y_min, width, height = coordinates
 
@@ -85,7 +112,8 @@ def order_points(coordinates):
 
 def convert2Square(image):
     """
-    Resize non square image(height != width to square one (height == width)
+    Resize hình ảnh không vuông
+    (chiều cao! = Chiều rộng) thành hình vuông (chiều cao == chiều rộng)
     :param image: input images
     :return: numpy array
     """

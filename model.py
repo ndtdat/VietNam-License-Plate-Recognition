@@ -1,6 +1,4 @@
-import keras
 import numpy as np
-
 import config
 from data_provider import Datasets
 from keras import optimizers
@@ -20,10 +18,10 @@ class CNN_Model(object):
         self.trainable = trainable
         self.num_epochs = config.EPOCHS
 
-        # Building model
+        # Xây dựng mô hình (model)
         self._build_model()
 
-        # Input data
+        # Trường hợp huấn luyện lại mô hình
         if trainable:
             self.model.summary()
             self.data = Datasets()
@@ -31,6 +29,10 @@ class CNN_Model(object):
         self.model.compile(loss="categorical_crossentropy", optimizer=optimizers.Adam(1e-3), metrics=['acc'])
 
     def _build_model(self):
+        """
+        Hàm xây dụng model cho tác vụ recognition
+        :return:
+        """
         # CNN model
         self.model = Sequential()
         self.model.add(Conv2D(32, (3, 3), padding='same', activation='relu', input_shape=(28, 28, 1)))
@@ -54,6 +56,10 @@ class CNN_Model(object):
         self.model.add(Dense(32, activation='softmax'))
 
     def train(self):
+        """
+        Hàm huấn luyện mạng recognition
+        :return:
+        """
         # reduce learning rate
         reduce_lr = ReduceLROnPlateau(monitor='val_acc', factor=0.2, patience=5, verbose=1, )
         # Model Checkpoint

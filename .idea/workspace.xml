@@ -24,9 +24,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f4c4f0-79c1-46bd-a149-fad4fb4131a3" name="Default Changelist" comment="">
+    <list default="true" id="74f6961e-eb1c-486f-befd-c9d6d2a9d39e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/experiment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Vietnam-License-Plate-Recognition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Vietnam-License-Plate-Recognition.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vietnam-License-Plate-Recognition.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1egOXCmgsens0fAPhOZGret282O" />
+  <component name="ProjectId" id="1fFqVEV9vzb9K4FhmSrHPW8nz4g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,7 +64,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="experiment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Vietnam-License-Plate-Recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,7 +76,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\COMPUTER-VISION-PROJECT-WITH-CODE\Vietnam-License-Plate-Recognition\test.py" />
+      <option name="SCRIPT_NAME" value="D:\COMPUTER-VISION-PROJECT-WITH-CODE\Vietnam-License-Plate-Recognition\experiment.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,7 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.experiment" />
       </list>
     </recent_temporary>
   </component>
@@ -81,62 +96,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="29f4c4f0-79c1-46bd-a149-fad4fb4131a3" name="Default Changelist" comment="" />
-      <created>1594739807652</created>
+      <changelist id="74f6961e-eb1c-486f-befd-c9d6d2a9d39e" name="Default Changelist" comment="" />
+      <created>1595824210039</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594739807652</updated>
+      <updated>1595824210039</updated>
     </task>
-    <task id="LOCAL-00001" summary="comit">
-      <created>1595524576301</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1595524576301</updated>
-    </task>
-    <task id="LOCAL-00002" summary="comit1">
-      <created>1595524691559</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1595524691559</updated>
-    </task>
-    <task id="LOCAL-00003" summary="comit1">
-      <created>1595524864277</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1595524864277</updated>
-    </task>
-    <task id="LOCAL-00004" summary="1">
-      <created>1595526152467</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1595526152467</updated>
-    </task>
-    <task id="LOCAL-00005" summary="1">
-      <created>1595526373399</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1595526373399</updated>
-    </task>
-    <task id="LOCAL-00006" summary="commit">
-      <created>1595527434999</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1595527434999</updated>
-    </task>
-    <task id="LOCAL-00007" summary="commit">
-      <created>1595527481836</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1595527481836</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,62 +114,48 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="comit" />
-    <MESSAGE value="comit1" />
-    <MESSAGE value="1" />
-    <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594867729296">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595824801351">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594867729296" />
-    <state x="532" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595521408256">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1595824801351" />
+    <state width="1515" height="291" key="GridCell.Tab.0.bottom" timestamp="1598344059302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="532" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1595521408256" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594867377855">
+    <state width="1515" height="291" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598344059302" />
+    <state width="1515" height="291" key="GridCell.Tab.0.center" timestamp="1598344059301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594867377855" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1595053687289">
+    <state width="1515" height="291" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598344059301" />
+    <state width="1515" height="291" key="GridCell.Tab.0.left" timestamp="1598344059301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595053687289" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1595053687288">
+    <state width="1515" height="291" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598344059301" />
+    <state width="1515" height="291" key="GridCell.Tab.0.right" timestamp="1598344059301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595053687288" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1595053687288">
+    <state width="1515" height="291" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598344059301" />
+    <state width="1515" height="291" key="GridCell.Tab.1.bottom" timestamp="1598344059302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595053687288" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1595053687289">
+    <state width="1515" height="291" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598344059302" />
+    <state width="1515" height="291" key="GridCell.Tab.1.center" timestamp="1598344059302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595053687289" />
-    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1594869378525">
+    <state width="1515" height="291" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1598344059302" />
+    <state width="1515" height="291" key="GridCell.Tab.1.left" timestamp="1598344059302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594869378525" />
-    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1594869378525">
+    <state width="1515" height="291" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1598344059302" />
+    <state width="1515" height="291" key="GridCell.Tab.1.right" timestamp="1598344059302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594869378525" />
-    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1594869378525">
+    <state width="1515" height="291" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1598344059302" />
+    <state x="471" y="40" key="SettingsEditor" timestamp="1596297520468">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594869378525" />
-    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1594869378525">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594869378525" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1595005843215">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595005843215" />
+    <state x="471" y="40" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596297520468" />
   </component>
 </project>

@@ -7,11 +7,11 @@ class Datasets(object):
     def __init__(self):
         self.all_data = []
 
-        # Input data
+        # Dữ liệu đầu vào
         self.digits_data = data_utils.get_digits_data('./data/digits.npy')
         self.alphas_data = data_utils.get_alphas_data('./data/alphas.npy')
 
-        # Preprocess
+        # Dữ liệu đầu ra
         self.convert_data_format()
 
     def gen(self):
@@ -28,13 +28,13 @@ class Datasets(object):
         return images, labels
 
     def convert_data_format(self):
-        # Digits data
+        # Dữ liệu số
         for i in range(len(self.digits_data)):
             image = self.digits_data[i][0]
             label = self.digits_data[i][1]
             self.all_data.append((image, label))
 
-        # Alpha data
+        # Dữ liệu chữ
         nb_alphas_data = len(self.alphas_data)
         for i in range(nb_alphas_data * 8):
             image = self.alphas_data[i % nb_alphas_data][0]
